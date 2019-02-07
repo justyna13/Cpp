@@ -81,8 +81,13 @@ bool check_if_won() {
         }
     }
 
+    // jesli po skosie
     if (g_board[0][0] != FLD_EMPTY && g_board[1][1] != FLD_EMPTY && g_board[2][2] != FLD_EMPTY){
         if (g_board[0][0] == g_board[1][1] == g_board[2][2]) return 1;
+    }
+
+    if (g_board[0][2] != FLD_EMPTY && g_board[1][1] != FLD_EMPTY && g_board[2][0] != FLD_EMPTY){
+        if (g_board[0][2] == g_board[1][1] == g_board[2][0]) return 1;
     }
     return 0;
 }
