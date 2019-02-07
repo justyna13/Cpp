@@ -17,7 +17,7 @@ int main() {
         game_status = GS_MOVE;
     }
     while (game_status == GS_MOVE) {
-        move_made(current_player);
+        make_move(current_player);
         draw_board();
         won = check_if_won();
         if (won) {

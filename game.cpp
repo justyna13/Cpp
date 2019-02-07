@@ -17,7 +17,7 @@ bool game_start() {
 }
 
 
-bool move_made(unsigned current_player) {
+bool make_move(unsigned current_player) {
     int choice;
     char current_sign;
     int column;

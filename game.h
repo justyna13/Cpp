@@ -12,7 +12,7 @@ enum GAMESTATE { GS_NOTSTARTED,
 enum SIGN { SGN_CIRCLE, SGN_CROSS };
 
 bool game_start();
-bool move_made(unsigned current_player);
+bool make_move(unsigned current_player);
 bool draw_board();
 bool check_if_won();
 
